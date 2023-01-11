@@ -21,6 +21,12 @@ function setup() {
 }
 
 function draw() {
+  if(ypos+75>800){
+    ypos-=5
+  }
+  if(ypos-25<0){
+    ypos+=5
+  }
   if(!gameOver){
   background(220);
   stroke(2);
@@ -29,6 +35,8 @@ function draw() {
   fill(255, 0, 0);
   noStroke();
   rect(0, 0, 150, 800);
+  rect(0,0,800,25)
+  rect(0,775,800,25)
   fill(0);
   rect(300, 0, 200, 50);
   fill(255);
