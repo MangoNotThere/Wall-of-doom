@@ -61,7 +61,7 @@ function draw() {
     
   }
   
-  if(ypos-25>wY&&ypos+25<wY+200&&300<wM+50&&300>=wM){
+  if(ypos+50>wY&&ypos<wY+200&&300<wM+50&&300>=wM){
      gameOver=true
     fill(0,0,0,50)  
     rect(0,0,800,800)
